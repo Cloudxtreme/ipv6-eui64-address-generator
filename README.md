@@ -6,8 +6,11 @@ Script that generates IPv6 EUI-64 addresses (or the appropriate commands for Nma
 Usage: ```lua eui64_address_generator.lua <vendors> <filename> <network address> <nmap's flag>```
 
 ```vendors```: is the name of the chosen vendors. Example: ```Sony,Ibm```.
+
 ```filename```: contains the names of the vendors and their respective OUIs.
+
 ```network address```: the network address.
+
 ```nmap flag```: this must be true should Nmap commands be generated instead of all the addresses.
 
 
