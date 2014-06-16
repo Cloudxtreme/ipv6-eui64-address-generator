@@ -115,7 +115,7 @@ local function main(vendors_str, vendors_filename, network_address)
     for _, oui in ipairs(chosen_ouis[vendor_name]) do
       local formatted_oui = get_formatted_oui(oui)
       if (nmap_commands ~= nil) then
-        print("nmap -6 " .. network_address .. formatted_oui .. "FF:FE::/104")
+        print("nmap -6 " .. network_address .. formatted_oui .. "FF:FE00:0000/104")
       else
         compute_candidate_addresses(network_address, formatted_oui)
       end
