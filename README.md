@@ -4,10 +4,10 @@ ipv6-eui64-address-generator
 Script that generates IPv6 EUI-64 addresses (or the appropriate commands for Nmap) based on a vendor's OUI.
 
 Usage: ```lua eui64_address_generator.lua <vendors> <filename> <network address> <nmap's flag>```:
--```vendors```: name of the chosen vendors (```Sony,Ibm,Xerox```).
--```filename```: path to file that contains the names of the vendors and their respective OUIs.
--```network address```: the network address.
--```nmap flag```: this must be true should Nmap commands be generated instead of all the addresses.
+*```vendors```: name of the chosen vendors (```Sony,Ibm,Xerox```).
+*```filename```: path to file that contains the names of the vendors and their respective OUIs.
+*```network address```: the network address.
+*```nmap flag```: this must be true should Nmap commands be generated instead of all the addresses.
 
 
 Executing ```lua eui64_address_generator.lua Sony,Xerox vendors.csv fe80:0000:0000:0000 true``` will generate:
